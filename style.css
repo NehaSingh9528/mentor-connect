@@ -1,0 +1,202 @@
+/* Main page styling */
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header .container{
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+}
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #4a4a69;
+    text-decoration: none;
+}
+header nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px
+}
+header nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.hero{
+    background-color: #f4f4f9;
+    padding: 80px 0 ;
+    text-align: center;
+}
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.button-primary{
+    color: #fff;
+    background-color: #5e63b6;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.button-primary:hover {
+    background-color: #4a4e69;
+}
+.features{
+    padding: 40px 0 80px 0;
+    text-align: center;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.feature-card{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.feature-card h3{
+    margin-top: 0;
+    color: #4a4e69;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Mentor Profile Page */
+.mentor-profile{
+    display: flex;
+    gap: 40px;
+    padding: 60px 0;
+}
+.profile-pic{
+    flex-basis: 30%;
+}
+.profile-pic img{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-info{
+    flex-basis: 70%;
+}
+
+.profile-info h1{
+    margin-top: 0;
+    font-size: 42px;
+}
+.profile-info h2{
+    font-size: 20px;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+}
+.profile-info ul{
+    list-style-type: '✔ ';
+    padding-left: 20px;
+}
+.profile-info .button-primary {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Style for clickable card */
+.card-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature-card{
+    transition: transform 0.2s;
+    box-shadow: 0.2s;
+}
+.feature-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Table style */
+.directory{
+    padding: 60px 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+th, td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    font-weight: bold;
+    color: #4a4e69;
+    background-color: #f4f4f9;
+}
+
+/* Style for the links in the table */
+td a{
+    text-decoration: none;
+    color: #5e63b6;
+    font-weight: bold;
+}
+td a:hover{
+    text-decoration: underline;
+}
+tr:hover{
+    background-color: #f9f9f9;
+}
+
+/* Description style */
+.description-section{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+
+
